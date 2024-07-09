@@ -12,6 +12,10 @@
         rel="stylesheet">
 
     <style>
+        @media only screen and (max-width: 1200px) {
+            /* styles for laptops and smaller screens */
+        }
+
         * {
             margin: 1px;
             padding: 3px;
@@ -64,22 +68,26 @@
             align-items: center;
             margin: 40px 0;
             padding: 20px;
+            flex-wrap: wrap;
+            /* add this to make the section wrap on smaller screens */
         }
 
         .leftsection {
             padding: 20px;
             flex: 1;
-            margin-right: 60px;
-            font-size: 2.5rem;
+            margin-right: 20px;
+            /* reduce margin on smaller screens */
         }
 
         .rightsection {
             flex: 1;
             margin-left: 20px;
+            /* reduce margin on smaller screens */
         }
 
         .rightsection img {
-            width: 90%;
+            width: 100%;
+            /* make the image take up the full width */
             height: auto;
         }
 
