@@ -10,6 +10,8 @@
             background-color: rgb(19, 19, 47);
             color: white;
             font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
         }
 
         nav {
@@ -28,17 +30,18 @@
         }
 
         .container {
-            width: 80%;
+            width: 90%;
             max-width: 600px;
-            margin: 50px auto;
+            margin: 20px auto;
             background: #7561b8;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
 
         h1 {
             text-align: center;
-            color: #333;
+            color: lavender;
         }
 
         form {
@@ -65,6 +68,7 @@
             border: none;
             cursor: pointer;
             transition: background-color 0.3s ease;
+            padding: 10px;
         }
 
         input[type="submit"]:hover {
@@ -74,21 +78,21 @@
         .footer {
             text-align: center;
             margin-top: 20px;
-            padding: 5px 0;
+            padding: 10px 0;
             background: #444;
             color: lavender;
         }
 
         .top {
             text-align: center;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             color: rgb(161, 161, 193);
             margin: 20px;
         }
 
         .info {
-            text-align: left;
-            font-size: 1.8rem;
+            text-align: center;
+            font-size: 1.2rem;
             margin: 20px;
             color: skyblue;
         }
@@ -98,19 +102,18 @@
             color: lavender;
             font-size: 1rem;
             margin: 10px;
-            cursor: pointer;
         }
 
         .Social {
-            text-align: left;
-            font-size: 1.8rem;
+            text-align: center;
+            font-size: 1.2rem;
             margin: 20px;
             color: skyblue;
         }
 
         .Connect {
             text-align: center;
-            font-size: 1.2rem;
+            font-size: 1rem;
             color: gray;
             margin: 20px;
         }
@@ -120,14 +123,46 @@
             color: lavender;
             font-size: 1rem;
             margin: 10px;
-            cursor: pointer;
         }
 
         .Lower {
             text-align: center;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             color: rgb(161, 161, 193);
             margin: 20px;
+        }
+
+        @media (max-width: 768px) {
+            nav h1 {
+                font-size: 1.5rem;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            label,
+            input,
+            textarea {
+                font-size: 1rem;
+            }
+
+            input[type="submit"] {
+                padding: 12px;
+            }
+
+            .top,
+            .info,
+            .Social,
+            .Connect,
+            .Lower {
+                font-size: 1rem;
+            }
+
+            .Information,
+            .Media {
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
@@ -145,16 +180,16 @@
 
     <div class="Information">
         <p>Email - gk0642981@gmail.com</p>
-        <p>Linkedin Id - https://www.linkedin.com/in/gopal-kumar-973903273/</p>
-        <p>Github Id - https://github.com/Gopal-13</p>
+        <p>LinkedIn - <a href="https://www.linkedin.com/in/gopal-kumar-973903273/" target="_blank" style="color:skyblue;">https://www.linkedin.com/in/gopal-kumar-973903273/</a></p>
+        <p>GitHub - <a href="https://github.com/Gopal-13" target="_blank" style="color:skyblue;">https://github.com/Gopal-13</a></p>
         <p>Contact no. - 7368082492</p>
     </div>
 
     <div class="container">
-        <h1> Contact Form</h1>
-        <form action="https://api.web3forms.com/submit" method="POST" method="post">
-            <label for="name">Name:</label>
+        <h1>Contact Form</h1>
+        <form action="https://api.web3forms.com/submit" method="POST">
             <input type="hidden" name="access_key" value="3dd4debe-89ca-403d-b01b-1c258ee4b2f9">
+            <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
 
             <label for="email">Email:</label>
@@ -170,14 +205,13 @@
     <div class="Social">Social Media :-</div>
     <div class="Connect"> Feel Free to Connect with me on Social Media.</div>
     <div class="Media">
-        Twitter - https://x.com/Gopal_ku0
-
+        Twitter - <a href="https://x.com/Gopal_ku0" target="_blank" style="color:skyblue;">https://x.com/Gopal_ku0</a>
     </div>
 
-    <div class="Lower">Thank you. For visiting my portfolio. I look forward to connect with you!</div>
+    <div class="Lower">Thank you for visiting my portfolio. I look forward to connecting with you!</div>
 
     <div class="footer">
-        <p>Copyrights &copy; 2024 / All rights reserved / Gopal's Portfolio </p>
+        <p>&copy; 2024 Gopal's Portfolio. All rights reserved.</p>
     </div>
 </body>
 
