@@ -10,6 +10,8 @@
             background-color: rgb(45, 45, 73);
             color: white;
             font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
         }
 
         nav {
@@ -29,17 +31,18 @@
 
         .container {
             max-width: 960px;
-            margin: 50px auto;
+            margin: 20px auto;
             background: #5a7d96;
-            padding: 40px;
+            padding: 20px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
 
         .profile-pic {
             display: block;
             width: 150px;
             height: 150px;
-            border-radius: 40%;
+            border-radius: 50%;
             margin: 0 auto 20px;
         }
 
@@ -68,35 +71,24 @@
             padding: 21px 0;
             background: #444;
         }
-        
+
         .footer p {
             color: lavender;
         }
 
-        .technicalskill h3 {
-            font-size: 1.5rem;
-            color: rgb(197, 210, 58);
-            text-align: left;
-        }
-
-        .technicalskill ul li {
-            font-size: 1.2rem;
-            color: lavender;
-            text-align: left;
-        }
-
+        .technicalskill h3,
         .softskill h3 {
             font-size: 1.5rem;
             color: rgb(197, 210, 58);
             text-align: left;
         }
 
+        .technicalskill ul li,
         .softskill ul li {
             font-size: 1.2rem;
             color: lavender;
             text-align: left;
         }
-
 
         .professional-journey {
             padding: 20px 0;
@@ -143,6 +135,7 @@
             border: 1px solid #ddd;
             position: relative;
             border-radius: 5px;
+            color: #333;
         }
 
         .timeline-item:nth-child(odd) .timeline-content::after {
@@ -169,23 +162,59 @@
 
         h3 {
             margin-top: 0;
-            color: #333;
         }
 
         span {
             display: block;
             margin: 10px 0;
-            color: #666;
         }
 
         p {
             margin: 0;
-            color: #555;
         }
 
         h4 {
             margin-top: 0;
-            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            nav h1 {
+                font-size: 1.5rem;
+            }
+
+            .bio p,
+            .skills h2,
+            .technicalskill h3,
+            .softskill h3,
+            .technicalskill ul li,
+            .softskill ul li {
+                font-size: 1rem;
+            }
+
+            .timeline::before {
+                left: 5%;
+            }
+
+            .timeline-item {
+                width: 90%;
+                left: 5%;
+            }
+
+            .timeline-item:nth-child(odd),
+            .timeline-item:nth-child(even) {
+                left: 5%;
+            }
+
+            .timeline-item:nth-child(odd) .timeline-content::after,
+            .timeline-item:nth-child(even) .timeline-content::after {
+                left: -8px;
+                border-right-color: #fff;
+                border-left-color: transparent;
+            }
         }
     </style>
 </head>
@@ -197,7 +226,7 @@
         </nav>
     </header>
     <div class="container">
-        <img src="Gopal.jpg" alt="Profile Picture" class="profile-pic">
+        <img src="Gopal.jpg" alt="Gopal's Profile Picture" class="profile-pic">
         <div class="bio">
             <p>I have Completed 12th-grade and recently enrolled in the first year of a Bachelor of Engineering (B.E.)
                 program in Computer Science and Engineering (CSE), with a focus on full stack development. I will study
@@ -209,11 +238,10 @@
                 science principles, preparing me for a career in creating comprehensive web applications and systems.
                 The program aims to equip me with the skills necessary to design, develop, and maintain all layers of a
                 software Stack.
-
             </p>
         </div>
         <div class="skills">
-            <h2>Skills and Experties</h2>
+            <h2>Skills and Expertise</h2>
             <section class="firstsection">
                 <div class="technicalskill">
                     <h3>Technical Skills</h3>
@@ -233,7 +261,7 @@
                         <li>Teamwork</li>
                         <li>Creative Problem Solving</li>
                         <li>Project Management</li>
-                        <li>Leader</li>
+                        <li>Leadership</li>
                     </ul>
                 </div>
             </section>
@@ -247,7 +275,7 @@
                             <h4>Java Developer at Codsoft</h4>
                             <span>July 2020 - Present</span>
                             <p>Glad to share that I have been selected for "Java programmer" at CodSoft. Ready to dive
-                                into the world of Java programming, learn new skills and contribute to interesting
+                                into the world of Java programming, learn new skills, and contribute to interesting
                                 projects. We are grateful for this opportunity, and look forward to traveling further!
                             </p>
                         </div>
@@ -255,11 +283,10 @@
                 </div>
             </section>
         </div>
-
     </div>
 
     <div class="footer">
-        <p>&copy; Copyrights &copy; 2024 / All rights reserved / Gopal's Portfolio</p>
+        <p>&copy; 2024 Gopal's Portfolio. All rights reserved.</p>
     </div>
 </body>
 
