@@ -7,7 +7,7 @@
     <title>About Me</title>
     <style>
         body {
-            background-color: rgb(45, 45, 73);
+            background-color: rgb(255, 255, 255);
             color: white;
             font-family: "Poppins", sans-serif;
             margin: 0;
@@ -16,25 +16,44 @@
 
         nav {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
             height: 60px;
             background-color: rgb(88, 88, 192);
             padding: 0 20px;
         }
 
-        nav h1 {
-            font-size: 1.8rem;
-            margin: auto;
-            color: lavender;
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 16px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(158, 158, 245);
+            font-size: 0.9rem;
+        }
+
+        .left {
+            font-size: 1.4rem;
+            cursor: pointer;
         }
 
         .container {
             max-width: 960px;
             margin: 20px auto;
-            background: #5a7d96;
+            background: lavender;
             padding: 20px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 20px rgb(73, 73, 73);
             border-radius: 10px;
         }
 
@@ -47,7 +66,7 @@
         }
 
         .bio p {
-            color: rgb(230, 230, 250);
+            color: rgb(55, 55, 56);
             margin: 15px 0;
             line-height: 1.5;
             font-size: 1.2rem;
@@ -62,7 +81,31 @@
             font-size: 2em;
             margin-bottom: 10px;
             text-align: center;
-            color: aquamarine;
+            color: rgb(55, 55, 56);
+        }
+
+
+        .technicalskill h3,
+        .softskill h3 {
+            font-size: 1.5rem;
+            color: rgb(76, 107, 209);
+            text-align: left;
+        }
+
+        .technicalskill ul li,
+        .softskill ul li {
+            font-size: 1.2rem;
+            color: rgb(55, 55, 56);
+            text-align: left;
+            list-style: none;
+        }
+
+        .professional-journey {
+            padding: 20px 0;
+        }
+
+        h2 {
+            text-align: center;
         }
 
         .footer {
@@ -76,27 +119,6 @@
             color: lavender;
         }
 
-        .technicalskill h3,
-        .softskill h3 {
-            font-size: 1.5rem;
-            color: rgb(197, 210, 58);
-            text-align: left;
-        }
-
-        .technicalskill ul li,
-        .softskill ul li {
-            font-size: 1.2rem;
-            color: lavender;
-            text-align: left;
-        }
-
-        .professional-journey {
-            padding: 20px 0;
-        }
-
-        h2 {
-            text-align: center;
-        }
 
         .timeline {
             position: relative;
@@ -220,24 +242,32 @@
 </head>
 
 <body>
+
     <header>
         <nav>
-            <h1>About me</h1>
+            <div class="left">Gopal's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About me</a></li>
+                    <li><a href="contactme.html">Contact me</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
+
     <div class="container">
         <img src="Gopal.jpg" alt="Gopal's Profile Picture" class="profile-pic">
         <div class="bio">
             <p>I have Completed 12th-grade and recently enrolled in the first year of a Bachelor of Engineering (B.E.)
-                program in Computer Science and Engineering (CSE), with a focus on full stack development. I will study
+                program in Computer Science and Engineering (CSE), with a Focus on Full Stack Development. I will study
                 a range
-                of subjects that cover both front-end and back-end development, including programming languages, web
-                development,
-                database management, and software engineering. The curriculum will provide a solid foundation in
+                of subjects that cover both Front-end and Back-end development, including programming languages, Web Development,
+                Database Management, and Software Engineering. The Curriculum will provide a solid foundation in
                 computer
                 science principles, preparing me for a career in creating comprehensive web applications and systems.
                 The program aims to equip me with the skills necessary to design, develop, and maintain all layers of a
-                software Stack.
+                oftware Stack.
             </p>
         </div>
         <div class="skills">
@@ -246,18 +276,20 @@
                 <div class="technicalskill">
                     <h3>Technical Skills</h3>
                     <ul>
-                        <li>Full Stack Development</li>
-                        <li>Java programming</li>
-                        <li>Python programming</li>
+                        <li>Aspiring Full Stack Developer</li>
+                        <li>Web Developer</li>
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>Javascript</li>
+                        <li>Node.js</li>
+                        <li>mongodb</li>
                     </ul>
                 </div>
                 <div class="softskill">
                     <h3>Soft Skills</h3>
                     <ul>
-                        <li>Communication</li>
+                        <li>Effective Communication</li>
+                        <li>Interpersonal Skills</li>
                         <li>Teamwork</li>
                         <li>Creative Problem Solving</li>
                         <li>Project Management</li>
@@ -272,15 +304,46 @@
                     <div class="timeline-item">
                         <div class="timeline-content">
                             <h3>Internship</h3>
-                            <h4>Java Developer at Codsoft</h4>
-                            <span>July 2020 - Present</span>
+                            <h4>Java Developer intern at Codsoft</h4>
+                            <span>July 2024 - Present</span>
                             <p>Glad to share that I have been selected for "Java programmer" at CodSoft. Ready to dive
                                 into the world of Java programming, learn new skills, and contribute to interesting
-                                projects. We are grateful for this opportunity, and look forward to traveling further!
+                                projects. I am grateful for this opportunity!!
                             </p>
                         </div>
                     </div>
                 </div>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Internship</h3>
+                            <h4>Web Developer intern at Bharatintern</h4>
+                            <span>July 2024 - Present</span>
+                            <p>Glad to share that I have been selected for "WEb programmer" at Bharatintern. Ready to dive
+                                into the world of Web Development, learn new skills, and contribute to interesting
+                                projects.I am grateful for this opportunity!!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Internship</h3>
+                            <h4>Data Science & Analytics Intern at Zidio Development</h4>
+                            <span>July 2024 - Present</span>
+                            <p>Glad to share that I have been selected for "Data Science & Analytics Intern" at Zidio Development. Ready to dive
+                                into the world of Data Science & Analytics, learn new skills, and contribute to interesting
+                                projects.I am grateful for this opportunity!!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
             </section>
         </div>
     </div>
