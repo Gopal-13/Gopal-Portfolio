@@ -7,7 +7,7 @@
     <title>Contact Me</title>
     <style>
         body {
-            background-color: rgb(19, 19, 47);
+            background-color: white;
             color: white;
             font-family: "Poppins", sans-serif;
             margin: 0;
@@ -16,32 +16,53 @@
 
         nav {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
             height: 60px;
             background-color: rgb(88, 88, 192);
             padding: 0 20px;
         }
 
-        nav h1 {
-            font-size: 1.8rem;
-            margin: auto;
-            color: lavender;
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 16px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(158, 158, 245);
+            font-size: 0.9rem;
+        }
+
+        .left {
+            font-size: 1.4rem;
+            cursor: pointer;
         }
 
         .container {
             width: 90%;
             max-width: 600px;
             margin: 20px auto;
-            background: #7561b8;
+            background: lavender;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 20px rgb(73, 73, 73);
             border-radius: 10px;
+            color: rgb(102, 100, 100);
         }
 
         h1 {
             text-align: center;
-            color: lavender;
+            color: rgb(102, 100, 100);
+            
         }
 
         form {
@@ -63,7 +84,7 @@
         }
 
         input[type="submit"] {
-            background-color: #4186da;
+            background-color: rgb(93, 93, 161);
             color: lavender;
             border: none;
             cursor: pointer;
@@ -72,7 +93,62 @@
         }
 
         input[type="submit"]:hover {
-            background-color: #49c0cd;
+            background-color: rgb(122, 98, 229);
+        }
+
+
+
+        .top {
+            text-align: center;
+            font-size: 1.3rem;
+            color: rgb(82, 79, 79);
+            margin: 20px;
+            font-weight: bold;
+        }
+
+        .info {
+            text-align: center;
+            font-size: 1.4rem;
+            margin: 20px;
+            color: rgb(39, 38, 38);
+            font-weight: Bold;
+        }
+
+        .Information {
+            text-align: center;
+            color: rgb(40, 39, 39);
+            font-size: 1.2rem;
+            margin: 10px;
+        }
+
+        .Social {
+            text-align: center;
+            font-size: 1.3rem;
+            margin: 20px;
+            color: rgb(53, 52, 52);
+            font-weight: Bold;
+        }
+
+        .Connect {
+            text-align: center;
+            font-size: 1.2rem;
+            color: rgb(53, 52, 52);
+            margin: 20px;
+        }
+
+        .Media {
+            text-align: center;
+            color: rgb(53, 52, 52);
+            font-size: 1.2rem;
+            margin: 10px;
+        }
+
+        .Lower {
+            text-align: center;
+            font-size: 1.2rem;
+            color: rgb(53, 52, 52);
+            margin: 20px;
+            font-weight: Bold;
         }
 
         .footer {
@@ -81,55 +157,6 @@
             padding: 10px 0;
             background: #444;
             color: lavender;
-        }
-
-        .top {
-            text-align: center;
-            font-size: 1.2rem;
-            color: rgb(161, 161, 193);
-            margin: 20px;
-        }
-
-        .info {
-            text-align: center;
-            font-size: 1.2rem;
-            margin: 20px;
-            color: skyblue;
-        }
-
-        .Information {
-            text-align: center;
-            color: lavender;
-            font-size: 1rem;
-            margin: 10px;
-        }
-
-        .Social {
-            text-align: center;
-            font-size: 1.2rem;
-            margin: 20px;
-            color: skyblue;
-        }
-
-        .Connect {
-            text-align: center;
-            font-size: 1rem;
-            color: gray;
-            margin: 20px;
-        }
-
-        .Media {
-            text-align: center;
-            color: lavender;
-            font-size: 1rem;
-            margin: 10px;
-        }
-
-        .Lower {
-            text-align: center;
-            font-size: 1.2rem;
-            color: rgb(161, 161, 193);
-            margin: 20px;
         }
 
         @media (max-width: 768px) {
@@ -168,21 +195,37 @@
 </head>
 
 <body>
+
     <header>
         <nav>
-            <h1>Contact me</h1>
+            <div class="left">Gopal's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About me</a></li>
+                    <li><a href="contactme.html">Contact me</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <div class="top">I would love to hear from you! Whether you have a question, an opportunity, or just want to say
-        hello, feel free to reach out.</div>
+
+    <div class="top">I would love to hear from you!! Whether you have a Question, an opportunity, or just want to say
+        Hello, feel free to reach out.</div>
 
     <div class="info">Contact Information :-</div>
 
     <div class="Information">
-        <p>Email - gk0642981@gmail.com</p>
-        <p>LinkedIn - <a href="https://www.linkedin.com/in/gopal-kum73680/" target="_blank" style="color:skyblue;">https://www.linkedin.com/in/gopal-kumar-973903273/</a></p>
-        <p>GitHub - <a href="https://github.com/Gopal-13" target="_blank" style="color:skyblue;">https://github.com/Gopal-13</a></p>
-        <p>Contact no. - 7368082492</p>
+        <p>Email - <a
+                href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwQMHjxzpQzhblzRcpHKBBnWsshMlrZBbFbsFFwbVktDSZDpmNVRqHLPsVkCDhhhmbTrDWV"
+                target="_blank" style="color:rgb(47, 161, 206);">gk0642981@gmail.com</a></p>
+
+        <p>LinkedIn - <a href="https://www.linkedin.com/in/gopal-kumar-973903273/" target="_blank"
+                style="color:rgb(47, 161, 206);">Link</a></p>
+
+        <p>GitHub - <a href="https://github.com/Gopal-13" target="_blank" style="color:rgb(47, 161, 206);">Link</a></p>
+
+        <p>Phone No. - <a href="https://contacts.google.com/new" target="_blank"
+                style="color:rgb(47, 161, 206);">7368082492</a></p>
     </div>
 
     <div class="container">
@@ -205,7 +248,13 @@
     <div class="Social">Social Media :-</div>
     <div class="Connect"> Feel Free to Connect with me on Social Media.</div>
     <div class="Media">
-        Twitter - <a href="https://x.com/Gopal_ku0" target="_blank" style="color:skyblue;">https://x.com/Gopal_ku0</a>
+
+        <p>Twitter || X - <a href="https://x.com/Gopal_ku0" target="_blank" style="color:rgb(47, 161, 206);">Link</a>
+        </p>
+
+        <p>Instagram - <a href="https://www.instagram.com/kumar_gopal13?igsh=YXkzd29mOG9vMzhk" target="_blank" style="color:rgb(47, 161, 206);">Link</a>
+        </p>
+
     </div>
 
     <div class="Lower">Thank you for visiting my portfolio. I look forward to connecting with you!</div>
